@@ -1,56 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shop của Bạn</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>Shoe Store</h1>
+        <div class="header-top">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+                <h1>Shop của Bạn</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+                <button>Tìm kiếm</button>
+            </div>
+            <div class="cart">
+                <a href="#">Giỏ hàng (0)</a>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="home">
-        <div id="welcome">
-            <h2>Welcome to the Best Shoe Store!</h2>
-            <p>We offer a wide range of high-quality shoes for everyone.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Điện Tử</a></li>
+            <li><a href="#">Thời Trang</a></li>
+            <li><a href="#">Sức Khỏe</a></li>
+            <li><a href="#">Khuyến Mãi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="banner.jpg" alt="Banner" />
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <h2>Danh mục sản phẩm</h2>
+        <div class="categories">
+            <div class="category-item">
+                <img src="category1.jpg" alt="Category 1">
+                <h3>Điện Thoại</h3>
+            </div>
+            <div class="category-item">
+                <img src="category2.jpg" alt="Category 2">
+                <h3>Máy Tính</h3>
+            </div>
+            <div class="category-item">
+                <img src="category3.jpg" alt="Category 3">
+                <h3>Thời Trang Nam</h3>
+            </div>
+            <div class="category-item">
+                <img src="category4.jpg" alt="Category 4">
+                <h3>Thời Trang Nữ</h3>
+            </div>
         </div>
     </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product">
-                <img src="img/shoe1.jpg" alt="Shoe 1">
-                <h3>Running Shoe</h3>
-                <p>$50</p>
-                <button class="add-to-cart" onclick="addToCart('Running Shoe', 50)">Add to Cart</button>
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Điện Thoại iPhone 12</h3>
+                <p>Giá: 20,000,000 VND</p>
+                <button>Mua ngay</button>
             </div>
-            <!-- Product 2 -->
-            <div class="product">
-                <img src="img/shoe2.jpg" alt="Shoe 2">
-                <h3>Casual Sneaker</h3>
-                <p>$40</p>
-                <button class="add-to-cart" onclick="addToCart('Casual Sneaker', 40)">Add to Cart</button>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Áo Sơ Mi Nam</h3>
+                <p>Giá: 500,000 VND</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Đồng Hồ Casio</h3>
+                <p>Giá: 2,000,000 VND</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product-item">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Laptop Dell XPS</h3>
+                <p>Giá: 25,000,000 VND</p>
+                <button>Mua ngay</button>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shoe Store. All Rights Reserved.</p>
+        <p>&copy; 2024 Shop của Bạn - Bán hàng online uy tín và chất lượng!</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
